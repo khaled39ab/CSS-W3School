@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo</title>
+
+    <style>
+        h1:hover {
+            color: cadetblue;
+            background-color: aqua;
+        }
+
+        #first:focus {
+            font-weight: 700;
+            color: red;
+        }
+
+        #second:focus {
+            color: white;
+            font-size: 20px;
+            background-color: blueviolet;
+        }
+
+        a:visited{
+            color: red;
+        }
+
+        li:first-child{
+            color: royalblue;
+        }
+
+        li:last-child{
+            color: lightblue;
+        }
+
+        li:nth-child(2n){
+            background-color: cornsilk;
+        }
+
+        li:nth-child(2n+1){
+            background-color: lightgray;
+        }
+
+        h3::before{
+            content: "Mr. ";
+        }
+
+        .sir::after{
+            content: " Sir";
+            font-size: small;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1 title="Mouse hover">CSS Pseudo classes</h1>
+
+    <div>
+        <input type="text" placeholder="This is normal">
+        <input id="first" type="text" placeholder="This have focus">
+        <input id="second" type="text" placeholder="This have focus"> <br><br>
+    </div>
+
+    <div>
+        <a href="https://www.google.com" target="_blank">Go To Google</a> <br>
+        <a href="https://www.youtube.com" target="_blank">Go To Youtube</a> <br>
+        <a href="https://www.facebook.com" target="_blank">Go To Facebook</a> <br>
+        <a href="https://www.gmail.com" target="_blank">Go To Gmail</a>
+    </div>
+
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+        </ul>
+    </div>
+    </section>
+
+    <section>
+        <h1>Pseudo Element</h1>
+
+        <h3>Person-1</h3>
+        <h3>Person-2</h3>
+        <h3 class="sir">Person-3</h3>
+        <h3>Person-4</h3>
+        <h3 class="sir">Person-5</h3>
+        <h3 class="sir">Person-6</h3>
+        <h3>Person-7</h3>
+    </section>
+</body>
+
+</html>
