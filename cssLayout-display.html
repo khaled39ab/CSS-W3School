@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display & Visibility</title>
+
+    <style>
+        .sec{
+            display: flex;            
+        }
+
+        h3{
+            color: red;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border: 2px solid seagreen;
+            margin: 5px;
+        }
+
+        #box-1{
+            visibility: visible;
+        }
+        #box-2{
+            visibility: hidden;
+        }
+        #box-3{
+            display: none;
+        }
+
+        #ex-1{
+            height: 50px;
+            display: block;
+            background-color: lightblue;
+        }
+        #ex-2{
+            height: 50px;
+            display: inline;
+            background-color: lightblue;
+        }
+        #ex-3{
+            height: 50px;
+            display: inline-block;
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Layout - The display Property</h1>
+
+    <section class="sec">
+        <div class="box" id="box-1">
+            <p>This is box 1</p>
+        </div>
+        <div class="box" id="box-2">
+            <p>This is box 2</p>
+        </div>
+        <div class="box" id="box-3">
+            <p>This is box 3</p>
+        </div>
+        <div class="box" id="box-4">
+            <p>This is box 4</p>
+        </div>
+    </section>
+    <section class="sec">
+        <div class="box">
+            <p>Box-1 visibility is visible</p>
+        </div>
+        <div class="box">
+            <p>Box-2 visibility is hidden</p>
+        </div>
+        <div class="box">
+            <p>Box-3 display is none & have not any space </p>
+        </div>
+        <div class="box">
+            <p>Box-4 has no Property</p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h3>Display: block</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed mollitia nobis reprehenderit accusantium in ab officiis quam, <p id="ex-1">HELLO WORLD!</p> ut praesentium quod dolores, sapiente aliquid optio eligendi minus illo blanditiis perspiciatis molestias.</p>
+        </div>
+        <div>
+            <h3>Display: inline</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos inventore reprehenderit laborum ut fugit? Voluptas deleniti <p id="ex-2">HELLO WORLD!</p> quam ipsum temporibus quibusdam expedita optio in omnis nobis, atque quas ipsam perspiciatis et!</p>
+        </div>
+        <div>
+            <h3>Display: inline-block</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic laborum consequatur illum veritatis omnis cumque quaerat harum <p id="ex-3">HELLO WORLD!</p> unde saepe, facere, earum excepturi, a doloremque nulla ratione dolorum maiores assumenda incidunt?</p>
+        </div>
+    </section>
+
+</body>
+</html>
