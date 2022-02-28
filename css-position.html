@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        .box{
+            border: 1px solid pink;
+            height: 150px;
+            width: 200px;
+        }
+
+        .mid{
+            height: 300px;
+            width: 350px;
+            border: 1px solid powderblue;
+            background-color: bisque;
+        }
+        #box-1{
+            position: relative;
+            top: 110px;  
+            z-index: 2; 
+        }
+        #box-2{
+            position: sticky;  
+            z-index: 1;
+        }
+        #box-3{
+            position: relative;
+            top: -110px;
+
+        }
+        #box-4{
+            position: absolute;
+        }
+        #box-5{
+            position: sticky;
+            top: 150px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Position</h1>
+        <div class="box" id="box-1">
+            <img src="Images/boy.svg" alt="">
+        </div>
+        <div class="box" id="box-2">
+            <img src="Images/ring.svg" alt="">
+        </div>
+        <div class="box" id="box-3">
+            <img src="Images/water.svg" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="mid" id="box-4">
+            <img src="Images/tree.jpg" alt="">
+        </div>
+        <div class="mid" id="box-5">
+            <img src="Images/tree2.png" alt="">
+        </div>
+        <div class="mid">
+            <P>lorem20</P>
+        </div>
+        <div class="mid">
+            <P>lorem20</P>
+        </div>
+        <div class="mid">
+            <P>lorem20</P>
+        </div>
+        <div class="mid">
+            <P>lorem20</P>
+        </div>
+        <div class="mid">
+            <P>lorem20</P>
+        </div>
+        <div class="mid">
+            <P>lorem20</P>
+        </div>
+        <div class="mid">
+            <P>lorem20</P>
+        </div>
+        <div class="mid">
+            <P>lorem20</P>
+        </div>
+        <div class="mid">
+            <P>lorem20</P>
+        </div>
+        <div class="mid">
+            <P>lorem20</P>
+        </div>
+        <div class="mid">
+            <P>lorem20</P>
+        </div>
+        <div class="mid">
+            <P>lorem20</P>
+        </div>
+        <div class="mid">
+            <P>lorem20</P>
+        </div>
+    </section>
+    <section>
+        <h2>This is third section</h2>
+        <div class="mid"></div>
+        <div class="mid"></div>
+        <div class="mid"></div>
+        <div class="mid"></div>
+        <div class="mid"></div>
+        <div class="mid"></div>
+        <div class="mid"></div>
+        <div class="mid"></div>
+        <div class="mid"></div>
+        <div class="mid"></div>
+    </section>
+</body>
+</html>
